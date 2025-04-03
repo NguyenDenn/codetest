@@ -1,36 +1,18 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+Cách triển khai test 1:
 
-## Getting Started
+- Hàm processWithDelay nhận vào 1 mảng numbers
+- Nếu nhận vào không phải là 1 mảng gồm các number thì sẽ xuất hiện lỗi
+- khai báo biến process với kiểu trả về là 1 mảng các number với khởi tạo là 1 mảng rỗng
+- cho vòng lặp nếu nhận vào không phải là number thì sẽ xuất hiện lỗi
+- Thêm phần tử hiện tại vào mảng, cập nhật ui với danh sách đã xử lý, resolve đành dấu là hoàn thành promise
+- Khởi tạo 2 state để hiển thị dữ liệu
 
-First, run the development server:
+Cách triển khai test 2:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- Sử dụng json server để tạo api sử dụng
+- xử dụng axios để lấy api từ db.json
+- Sử dụng shadcn UI để sử dụng gia diện
+- Tạo các component con và truyền dữ liệu xuống, nhằm rút gọn code
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Hướng dẫn chạy mã:
+clone code về từ
