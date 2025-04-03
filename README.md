@@ -15,4 +15,8 @@ Cách triển khai test 2:
 - Tạo các component con và truyền dữ liệu xuống, nhằm rút gọn code
 
 Hướng dẫn chạy mã:
-clone code về từ
+
+- clone code về từ https://github.com/NguyenDenn/codetest
+- npm i để cài đặt các package
+- npm run dev để chạy
+- npm run api để chạy json server
